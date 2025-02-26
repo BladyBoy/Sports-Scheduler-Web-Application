@@ -2,19 +2,19 @@
   "development": {
     "username": "postgres",
     "password": "postgres",
-    "database": "Sports-Scheduler",
+    "database": "ravindra",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
     "password": "postgres",
-    "database": "Sports-Scheduler",
+    "database": "ravindra",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "use_env_variable": "DATABASE_URL",
+    "use_env_variable": "postgres://postgres:postgres@localhost:5432/ravindra",
     "dialect": "postgres"
   }
 }

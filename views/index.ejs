@@ -5,123 +5,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
     <title>Sports Scheduler</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, rgba(74, 145, 226, 0.382), rgba(0, 123, 255, 0.371)),
-                url('https://t3.ftcdn.net/jpg/05/32/57/30/360_F_532573032_XeFcG5HojuT8bMYnaKrPv70o4Nulwxwd.jpg') no-repeat center center fixed;
+            background:
+                url('https://wallpaperaccess.com/full/5004778.jpg') no-repeat center center fixed;
             background-size: cover;
-            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
             margin: 0;
             padding: 20px;
             display: flex;
+            flex-direction: column; /* Center elements vertically */
             justify-content: center;
             align-items: center;
             height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #006bdd;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-shadow: 2px 2px 4px #000000;
+            display: inline-block;
+            margin-bottom: 20px; /* Added spacing below h1 */
+        }
+
+        h1 span {
+            color: #ffcc00;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: #ffcc00;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px #000000;
         }
 
         .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            padding: 40px;
-            gap: 40px;
+            box-shadow: 0px 0px 20px #00ff99;
+            max-width: 400px;
+            position: relative;
         }
 
-        .info-container, .button-container {
-            flex: 1;
-        }
-
-        .info-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .info-container h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            background-color: rgba(0, 0, 0, 0.87);
-            border-radius: 10px;
-            text-align: center  ;
-            color: #0066d3;
-            text-shadow: 02px 02px 4px rgba(0, 255, 162, 0.5);
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-style: italic;
-        }
-
-        .info-container h2 {
-            font-size: 1.5rem;
-            color: #000a1a;
-            text-shadow: 02px 02px 05px #370aed;
-            font-style: italic;
-            font-size: large;
-            text-align: center;
+        /* Centering h2 below h1 */
+        h2 {
+            color: #9affd8;
+            text-shadow: 1px 1px 5px rgb(0, 157, 255);
+            margin-bottom: 15px;
         }
 
         .button-container {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.9);
-            border-radius: 10px;
-        }
-
-        .button-container h3 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            color: #d1d1d1;
+            align-items: center;
+            margin-top: 20px;
         }
 
         .button-container a {
             background-color: #1e90ff;
-            color: #fff;
-            padding: 12px 24px;
-            border-radius: 8px;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
             text-decoration: none;
+            font-size: 1em;
             font-weight: bold;
             margin: 10px 0;
-            transition: background-color 0.3s, transform 0.3s;
             display: block;
             width: 100%;
+            box-sizing: border-box;
             text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
         .button-container a:hover {
             background-color: #0056b3;
             transform: scale(1.05);
         }
-
-        .button-container a:last-child {
-            background-color: #00bfff;
-        }
-
-        .button-container a:last-child:hover {
-            background-color: #007acc;
-        }
     </style>
 </head>
 
 <body>
+    <!-- Placed h1 at the top center -->
+    <h1><span>S</span>PORTS SCHEDULER</h1>
+
+    <!-- Placed h2 below h1 in the center -->
+    
+
     <div class="container">
-        <div class="info-container">
-            <h1>Sports Scheduler</h1>
-            <h2>Your ultimate sports scheduling companion</h2>
-        </div>
+        <h2>Welcome to Sports Scheduler</h2>
+        <p>Your ultimate sports scheduling companion.</p>
         <div class="button-container">
-            <h3>New to Sports Scheduler?</h3>
             <a href="/signup">Create an Account</a>
-            <h3>Already a member?</h3>
             <a href="/login">Sign In</a>
         </div>
     </div>
